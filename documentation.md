@@ -71,6 +71,17 @@ For more interactivity I also added a GUI so that the user can influence certain
 Finally, the last task was to give the meshes shader. This task was also the most difficult for me. After a relatively long phase with a lot of trail and error, I was able to create the shader files and link them to the meshes. I was also able to add `uniform` variables to communicate between the questionment shader files and the `ofApp.cpp` file. For example, I passed time and the fft values to the shader as uniform variables.
 
 ![](./img/shader.png)
+
+I used a total of 5 different shaders: one for the background, one for the two-dimensional shapes, one for the planets, one for the sun, and one for the terrain. After a long time of work and many tutorials, I unfortunately didn't manage to use the vertex shader specifically so that the shader changes based on the movements of the mesh. Therefore I worked exclusively with fragment shaders and programmed shaders that remind me of mixing watercolors by using sine, cosine and time-mapping. 
+The finished application looks like this:
+
+
+![](./img/finished.png)
+![](./img/finished2.png)
+![](./img/finished3.png)
+![](./img/finished4.png)
+![](./img/finished5.png)
+
 ## Lessons learned
 - I learned how a workflow can work with openFrameworks. 
 - Improvement in shader programming and the use of uniform.
@@ -82,6 +93,7 @@ Finally, the last task was to give the meshes shader. This task was also the mos
 
 ## Possible future work
 
+- Use vertex shader.
 - Improvement of shaders
 - Appearance of certain objects in the environment, which you "drive past".
 - Release, so that it becomes publicly usable as a music visualizer and thus also reacts to music that is played somewhere on the computer.
